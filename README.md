@@ -66,12 +66,19 @@ Any enterprise application will provide a suite of tools to either users or admi
 
 ## Perceived Performance – Page Processing/Loading
 
-![results-common-locations.png](results-common-locations.png)
+Let users know the application is performing for them. A simple yet commonly ignored UI component is a loading graphic. These build trust with the user that the application is processing what they are looking to achieve and mixed with error handling gives users even more confidence in the application. 
+
+![perceived-performance.png](perceived-performance.png)
 
 # Hierarchy Placement Map 
 Hierarchy of content is a great strategy for setting the placement and flow content and call to actions to achieve those site goals. The following maps are based on a left to right language direction. Mobile is self-explanatory. 
 
 ![hierarchy.png](hierarchy.png)
+
+#### Mobile example
+
+Following this placement map, we can already see that this mobile UI would benefit from placement of the Save button in the top, perhaps fixated so the user can always see this action even as they scroll. 
+
 ![hierarchy-mobile.png](hierarchy-mobile.png)
 
 
