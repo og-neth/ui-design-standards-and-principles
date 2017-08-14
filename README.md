@@ -11,11 +11,10 @@ Define the UI in groups or sections that relate to all tools. Users intuitively 
         - This does involve in some cases making the UI smarter in order to anticipate a user action or guide (hook) the user into adopting the behavior that is optimal to making tool use efficient. (main goal: efficiency operating the tool)
         - Advanced users should be provided the ability to ‘open’ these advanced actions/settings that they can manipulate to achieve the customized result they are seeking.
 2. User Input
-    1. Required, Optional and Conversional
+    1. Required and Optional for Conversion (ROC)
         - At a bare bones minimum, we should only show what information we require of the user in order to successfully submit the form we are displaying to them.
-        - Optional information, should be hidden and visible by providing the user the ability to enter this optional information should they wish to enter it.
-        - Conversional information (information that can be updated on a frequent basis but is not required) should also be given hierarchy to promote efficient usage by the user.
-        - Enable actions users can perform after making validated selections or data input (Decreases the need for unnecessary null checking and logic is written to function precisely based on the user initiated trigger.)
+        - Optional information, can be hidden and visible by providing the user the ability to enter this optional information should they wish to enter it.
+        - Enable actions users can perform after making validated selections or validated data entries (Decreases the need for unnecessary null checking and logic is written to function precisely based on the user initiated trigger.) For example, don't enable a submit button until all requried information on the form is entered and validated. 
 3. Results – also see Perceived Performance bullet point
     1. Users expect a result from their interactions with an application. This interactivity is crucial to an optimal UX.
         - Loaders to let user know application is processing their requests and actions. 
@@ -36,17 +35,43 @@ Define the UI in groups or sections that relate to all tools. Users intuitively 
         - Display loading iconography or progress bars (data submission, data retrieval, any action involving data over the server).
         - Lazy Loading
 # Examples
-## Actions - Basic and Advanced
+## Actions - Basic and Advanced / Options (secondary, tertiary)
 
-## User Input – Required, Optional and Conversional
+In this example we're looking at a reports generating tool. A UI should always account for new and experienced users and finding a balance to cater to both user types. New users will always be a basic user, until they get the familiarity needed to consider themselves advanced with the tool. Therefore, minifying options and clearly distinguishing the call to action, will let these basic users have success with the tool and feel confident with it. You can clearly see what the call to action is, and using a minimal approach secondary and tertiary options are easy to spot and are grouped relative to each other to minimize eye scanning. This view can be futher enhanced from the development perspective by leveraging local storage to save settings and the state of the UI for some of those advanced users. 
+
+![actions.png](actions.png)
+
+#### Mobile example
+
+![actions-mobile.png](actions-mobile.png)
+![actions-mobile-1.png](actions-mobile-1.png)
+
+## User Input – Required and Optional for Conversion (ROC) 
+
+In this example, we're looking at a contact form for a mobile CRM application. If you are familiar with CRM applications then this UI  should make sense. You can see that for a CRM a new contact's first name and last name are very important (hypothetically we're only showing First and Last Name, you would also want some contact information like email or phone number as well). Notice however that the Follow Up Date fields are not required but are shown here as an option. Again in a CRM application this is very beneficial information. The goal (conversion) of this page is to quickly add a contact and making that flow as easy as possible for the user on the go. 
+
+![user-input.png](user-input.png)
 
 ## Results – Error Handling
 
+Self-explanatory yet often missed. Users need to know their submissions are successful, but most importantly if those submissions error out. Users trust an application that can communicate with them. 
+
+![results-error-handling.png](results-error-handling.png)
+
 ## Results – Common Locations
 
+Any enterprise application will provide a suite of tools to either users or adminstrators. These tools will vary in functionality and feature sets. As well as UI components. They can be graphical represntations of data in charts or tables, form based UIs for CRUD operations, etc... Focusing on form and function from a design point of view. The different feature sets should share a common intuitiveness for new users to your application. One way of achieving this common intuitiveness is to leverage common page real estate for common hierarchal controls or actions. Many a time, within the same branded application I have come across common 2 column layouts, but yet find primary, secondary and tertiary functionality in different locations. Users shouldn't have to learn new layout patterns per each section of your application to become efficient at it. It should be automatic from one feature or section to the next where common controls are. KISS. Web design is not about aesthetic appeal, fit and finish come last, its about designing smarter functionality in an application and ease of use. 
+
+![results-common-locations.png](results-common-locations.png)
+
+## Perceived Performance – Page Processing/Loading
+
+![results-common-locations.png](results-common-locations.png)
+
 # Hierarchy Placement Map 
-Hierarchy of content is a great strategy for setting the placement and flow of conversional goal content and call to actions. The following maps are based on a left to right language direction. Mobile is self-explanatory. 
+Hierarchy of content is a great strategy for setting the placement and flow content and call to actions to achieve those site goals. The following maps are based on a left to right language direction. Mobile is self-explanatory. 
 
-
+![hierarchy.png](hierarchy.png)
+![hierarchy-mobile.png](hierarchy-mobile.png)
 
 
