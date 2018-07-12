@@ -71,7 +71,7 @@ Let users know the application is performing for them. A simple yet commonly ign
 ![perceived-performance.png](perceived-performance.png)
 
 # Hierarchy Placement Map 
-Hierarchy of content is a great strategy for setting the placement and flow content and call to actions to achieve those site goals. The following maps are based on a left to right language direction. Mobile is self-explanatory. 
+Hierarchy of content is a great strategy for setting the placement and flow of content along with call to actions to achieve those conversion/site goals. The following maps are based on a left to right language direction. Mobile is self-explanatory. 
 
 ![hierarchy.png](hierarchy.png)
 
