@@ -17,17 +17,19 @@ Define the UI in groups or sections that relate to all tools. Users intuitively 
         - Enable actions users can perform after making validated selections or validated data entries (Decreases the need for unnecessary null checking and logic is written to function precisely based on the user initiated trigger.) For example, don't enable a submit button until all requried information on the form is entered and validated. 
 3. Results – also see Perceived Performance bullet point
     1. Users expect a result from their interactions with an application. This interactivity is crucial to an optimal UX.
-        - Loaders to let user know application is processing their requests and actions. 
-        - Loaders also freeze the page from user fat fingering or double clicking elements that can trigger application logic to process multiple times. 
+        - Loaders to let user know application is processing their requests and actions.
+        - These can be a full page loader to completely block the user if necessary from performing another operation on the page
+        - A loader within the clicked CTA disabling it as another less intrusive feedback mecnhanism (I have seen Material UI libraries offer this feature in their buttons as props)
+        - A progress bar across the top or bottom of the page can also serve as a feedback mechanism (more involved to develop, however there are SPA frameworks that offer such functionality out of the box)
     2. Error Handling
-        - Any user triggered submission of any kind i.e., user entered data or user selection, will cause a request to our services and data bases to POST or GET data. The success or failure of these requests need to be communicated to the user, i.e., notification components (modal or inline).
+        - Any user triggered submission of any kind i.e., user entered data or user selection, will cause a request to your services and databases to POST or GET data. The success or failure of these requests need to be communicated to the user, i.e., notification components (modal or inline).
     3. Form Validation and special cases
         - Required fields need to be validated for input and or certain patterns (.i.e., masks, emails, dates).
         - Errors should be cleared immediately after user enters valid input.
     4. Real-Time updates
         - User deletions or additions in lists or grids, need to be updated in real time. Some of this behavior comes out of the box in certain widgets in certain UI libraries, in other widgets it is configurable or is engineered from scratch. 
     5. Common Locations
-        - Regardless of tools our users are interacting with, placement should be similar in layouts of common sections. For instance actions to perform on a page and or inner navigational items should have a consistent placement and design. This type of consistency increases the intuition we want from users when interacting with the tools. Common placement unifies the entire website. Style guide lines should also have placement guidelines of content/UI types.
+        - Regardless of tools your users are interacting with, placement should be similar in layouts of common sections. For instance actions to perform on a page and or child navigational items should have a consistent placement and design. This type of consistency increases the intuition we want from users when interacting with the tools. Common placement unifies the entire website. Style guide lines should also have placement guidelines of content/UI types.
 4. Options (secondary, tertiary)
     - Any view a user visits needs to clearly define a conversion goal (CTA). Whether it is a download, a click through, a submission or another type of interaction we seek from the user. We should limit the ‘options’ or CTAs on a page so that users are clearly funneled into this conversion.
 5. Perceived Performance – also see Results bullet point
