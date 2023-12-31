@@ -80,6 +80,7 @@ Hierarchy of content is a great strategy for setting the placement and flow of c
 #### Mobile example
 
 Following this placement map, we can already see that this mobile UI would benefit from placement of the Save button in the top, perhaps fixated so the user can always see this action even as they scroll. 
+EDIT: At the time of this writing, old iOS UIs would have app buttons near the top of a page, however with modern phones making sinlge finger scrolling and control more efficient, CTAs are easier to reach on the bottom of a Mobile UI. However there are known drawbacks with this approach, sometimes the CTA is not clear or blends in too much with the rest of the mobile UI. Especially in monochromatic themes. Also iOS Safari App has detection in place if a user touches that lower part of the screen in order to show Safari iOS browser controls. This causes undesirable behavior in some past experiences where double clicking for users is necessary. For those reasons, I still believe that a CTA fixed to the top of the mobile browser is a better placement. 
 
 ![hierarchy-mobile.png](hierarchy-mobile.png)
 
